@@ -47,8 +47,10 @@
 							<ul id="sites">
 			{{#each trips}}
 								<li>
-									<a href="{{this.link}}"><img src="{{this.image}}" alt="Img"></a>
-									<h2><a href="{{this.link}}">{{this.title}}</a></h2>
+									<a href="/api/trips/{{this.code}}">
+									<img src="images/{{this.image}}" alt="Img">
+									</a>
+									<h2><a href="/travel">{{this.name}}</a></h2>
 									<p>{{this.description}}</p>
 								</li>
 			{{/each}}
@@ -65,13 +67,13 @@
 						<a href="index.html">Home</a>
 					</li>
 					<li class="active">
-						<a href=“travel.html">Travel</a>
+						<a href="travel.html">Travel</a>
 					</li>
 					<li>
 						<a href="rooms.html">Rooms</a>
 					</li>
 					<li>
-						<a href=“meals.html">Meals</a>
+						<a href="meals.html">Meals</a>
 					</li>
 					<li>
 						<a href="news.html">News</a>
