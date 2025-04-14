@@ -20,8 +20,8 @@ export class TripDataService {
     return this.http.post<Trip>(this.url, formData);
   }
 
-  getTrip(tripCode: string) : Observable<Trip> {
-    return this.http.get<Trip>(this.url + '/' + tripCode);
+  getTrip(tripCode: string) : Observable<Trip[]> {
+    return this.http.get<Trip[]>(this.url + '/' + tripCode);
   }
 
   deleteTrip(id: string) : Observable<Trip> {
@@ -29,6 +29,6 @@ export class TripDataService {
   }
 
   updateTrip(formData: Trip) : Observable<Trip> {
-    return this.http.put<Trip>(this.url + '/' + formData._id, formData);
+    return this.http.put<Trip>(this.url + '/' + formData.code, formData);
   }
 }
