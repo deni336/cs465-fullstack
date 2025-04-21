@@ -96,7 +96,7 @@ These competencies—particularly in MEAN‑stack development and security—mak
 
 ## Repository & Deployment
 
-- **GitHub**: [github.com/deni336/travlr-getaways](https://github.com/deni336/travlr-getaways)  
+- **GitHub**: [github.com/deni336/travlr-getaways](https://github.com/deni336/cs465-fullstack)  
 - **Run Locally**:  
   1. `npm install` in both `/app_api` and `/app_admin`  
   2. Configure `.env` with `MONGODB_URI`, `JWT_SECRET`, and `PORT`  
